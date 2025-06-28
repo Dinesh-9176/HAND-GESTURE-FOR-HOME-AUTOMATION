@@ -1,0 +1,69 @@
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.device-active {
+  color: #10B981;
+  font-weight: bold;
+}
+
+.device-inactive {
+  color: #6B7280;
+}
+
+.webcam-container {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.webcam-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.control-card {
+  background-color: rgba(17, 24, 39, 0.8);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(75, 85, 99, 0.5);
+  transition: all 0.3s ease;
+}
+
+.control-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.start-button {
+  background-color: #3B82F6;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #2563EB;
+  transform: translateY(-2px);
+}
+
+.stop-button {
+  background-color: #EF4444;
+  transition: all 0.3s ease;
+}
+
+.stop-button:hover {
+  background-color: #DC2626;
+  transform: translateY(-2px);
+}
